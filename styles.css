@@ -1,0 +1,181 @@
+/**************************General******************/
+
+html {
+
+    height: 100%;
+}
+
+body {
+
+    margin: 0;
+    height: 100%;
+    background-image: radial-gradient(at top, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/* Main */
+
+#main {
+
+    padding-top: 3%;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+/* Title Section */
+
+.title {
+
+    border: 2px solid #cccccc;
+    border: 2px solid hsl(217, 16%, 45%);
+    border-radius: 20px;
+    padding: 15px 30px;
+    height: 15%;
+}
+
+.score {
+
+    float: right;
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 15px 40px;
+    border-radius: 10px;
+}
+
+.head, .points {
+
+    display: block;
+}
+
+.head {
+
+    letter-spacing: 1.5px;
+    color: #4444ff;
+    color: hsl(229, 64%, 46%);
+}
+
+.points {
+
+    font-size: 33px;
+    font-weight: bold;
+}
+
+/* Rules button */
+
+.rules-btn {
+
+    background-color: transparent;
+    border: 2px solid #cccccc;
+    border: 2px solid hsl(217, 16%, 45%);
+    color: white;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    padding: 5px 30px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+
+/* Modal */
+
+.modal-title, .close {
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.rules {
+
+    display: inline-block;
+    width: 100%;
+}
+
+/****************** Play Section *********************/
+
+/* Play step 1 */
+
+.play, .played-turn {
+
+    background-image: url('images/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 5% 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.play-icon {
+
+    width: 30%;
+    margin: 0 10%;
+    text-align: center;
+}
+
+.paper, .scissors, .rock {
+
+    padding: 30px;
+    background-color: #eeeeee;
+    border: 15px solid;
+    border-radius: 100%;
+}
+
+.paper {
+
+    border-color: #007bff;
+}
+
+.scissors {
+
+    border-color: #ffc107;
+}
+
+.rock {
+
+    border-color: #dc3545;
+}
+
+/* Play step 2 */
+
+.row {
+
+    width: 100%;
+}
+
+.played-turn {
+
+    background-image: none;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pick {
+
+    color: white;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.choice {
+
+    text-align: center;
+    padding: 10%;
+}
+
+.choice-icon {
+
+    width: 90%;
+}

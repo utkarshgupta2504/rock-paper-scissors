@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta http-equiv="content-type" lang="en">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .attribution {
+            color: white;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(220, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div class="title">
+            <img src="images/logo.svg" alt="logo">
+
+            <div class="score">
+                <span class="head">
+                    SCORE
+                </span>
+                <span class="points">
+                    0
+                </span>
+            </div>
+        </div>
+
+        <div class="play">
+            <a class="play-icon" role="button"><img class="paper" src="images/icon-paper.svg" alt="paper"></a>
+            <a class="play-icon" role="button"><img class="scissors" src="images/icon-scissors.svg" alt="scissors"></a>
+            <a class="play-icon" role="button"><img class="rock" src="images/icon-rock.svg" alt="rock"></a>
+        </div>
+
+        <div class="played-turn" style="display: none;">
+            <div class="row">
+                <div class="col-sm-6" style="width: 45%;">
+                    <div class="pick">
+                        YOU PICKED
+                    </div>
+                    <div class="choice">
+                        <img class="choice-icon" id="user-choice" alt="user-choice">
+                    </div>
+                </div>
+                <div class="col-sm-6" style="width: 45%;">
+                    <div class="pick">
+                        THE HOUSE PICKED
+                    </div>
+                    <div class="choice">
+                        <img class="choice-icon" id="house-choice" alt="house-choice">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </div>
+
+        Score
+        Rules
+
+        You Picked
+        The House Picked
+
+        You Win
+        You Lose
+
+        Play Again
+    </div>
+
+    <!-- Button trigger modal -->
+    <button class="btn rules-btn" type="button" data-toggle="modal" data-target="#exampleModal">
+        RULES
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RULES</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><img src="images/icon-close.svg" alt="close"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="rules" src="images/image-rules.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
